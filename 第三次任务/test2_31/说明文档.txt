@@ -1,0 +1,10 @@
+Status Delete_Pre(CiLNode *s)//删除单循环链表中结点s的直接前驱
+{
+  p=s;
+  while(p->next->next!=s) p=p->next; //找到s的前驱的前驱p
+  p->next=s;
+  return OK;
+}//Delete_Pre 
+
+这个是删除单循环链表中结点s的直接前驱的算法，思想正确，但在实现过程出错，目前没有找到问题
+
